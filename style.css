@@ -1,0 +1,65 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #e5eaa7;
+}
+.kontainer {
+    width: 1300px;
+    margin: auto;
+     display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "huvud huvud"
+    "innehåll sida"
+    "fot fot";
+    gap: 30px;
+}
+
+/* head */
+
+Header {
+    background-color: #f38282;
+    grid-area: huvud;
+}
+Header h1 {}
+Header nav {}
+Header nav a {}
+
+/* main */
+main {
+    background-color: #a5e59d;
+    grid-area: innehåll;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+main img {
+    background-color: #fff;
+    padding: 20px;
+}
+
+
+
+/* side */
+aside {
+    background-color: #96acd8;
+    grid-area: sida;
+}
+
+/* foot */
+footer {
+    background-color: #d4e194;
+    grid-area: fot;
+}
