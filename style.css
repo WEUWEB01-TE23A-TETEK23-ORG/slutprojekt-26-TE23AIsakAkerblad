@@ -46,13 +46,15 @@ body {
             "sida"
             "fot fot";
     gap: 30px;
+    color: ;
 }
 
 /* head */
 
 Header {
-    background-color: #7474744e;
+    background-color: #ffffff;
     grid-area: huvud;
+    
 }
 
 Header h1 {
@@ -73,31 +75,44 @@ Header nav a {
 }
 
 /* main */
+
 main {
-    background-color: #a5e59d;
+    background-color: #ffffff;
     grid-area: innehåll;
     display: grid;
     grid-template-columns: 1fr;
 }
-
 main img {
     background-color: #fff;
     padding: 20px;
     width: 100%;
+    border: 1px solid #000;
 }
 
-
-
 /* side */
+
 aside {
     background-color: #96acd8;
     grid-area: sida;
 }
+aside h2 {
+    font-size: 2em;
+}
+aside p {
+
+}
 
 /* foot */
+
 footer {
     background-color: #d4e194;
     grid-area: fot;
+}
+footer h3 {
+font-size: 1em;
+}
+footer p {
+color: #000;
 }
 
 
@@ -112,6 +127,9 @@ footer {
             "sida"
             "fot";
     }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* Dator: från 1024px */
@@ -123,5 +141,8 @@ footer {
         "huvud huvud"
         "innehåll sida"
         "fot fot";
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
     }
 }
