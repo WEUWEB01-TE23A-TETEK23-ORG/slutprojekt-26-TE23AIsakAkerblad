@@ -55,9 +55,7 @@ Header {
     background-color: #ffffff;
     padding: 1em;
     border-radius: 0.5em;
-    border:2px solid #000;
     grid-area: huvud;
-
 }
 
 Header h1 {
@@ -111,6 +109,16 @@ main .innehall1 {
 main .innehall img {
     background-color: #fff;
     margin-top: 20px;
+    border-radius: 10px;
+}
+.undertext {
+    display: none;
+    background-color: #ffffff;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0.5em;
+    position: absolute;
+    width: 30%;
 }
 
 /* side */
@@ -136,12 +144,13 @@ footer {
     padding: 1em;
     border-radius: 0.5em;
     grid-area: fot;
-}
-footer h3 {
-font-size: 1em;
+    display: flex;
 }
 footer p {
-font-size: 0.5em;
+    font-size: 1em;
+}
+footer p a {
+    color: #000000;
 }
 
 
