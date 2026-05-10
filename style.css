@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Enkel CSS-reset */
 html {
     box-sizing: border-box;
@@ -25,6 +26,8 @@ ul {
 
 img {
     width: 100%;
+    border-radius: 10px;
+    margin-top: 2px;
 }
 
 body {
@@ -39,12 +42,12 @@ body {
     width: 320px;
     margin: auto;
     display: grid;
-     grid-template-columns: 1fr;
-        grid-template-areas:
-            "huvud"
-            "innehåll"
-            "sida"
-            "fot";
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "huvud"
+        "innehåll"
+        "sida"
+        "fot";
     gap: 20px;
     color: #000;
 }
@@ -56,6 +59,7 @@ Header {
     padding: 1em;
     border-radius: 0.5em;
     grid-area: huvud;
+    margin-top: 1em;
 }
 
 Header h1 {
@@ -74,18 +78,20 @@ Header nav {
 Header nav a {
     background-color: #33333319;
     color: #000;
-    padding: 0.5em 0em 0.5em 0em ;
+    padding: 0.5em 0em 0.5em 0em;
     border-radius: 0.5em;
     width: 4.5em;
     font-size: 0.7em;
     text-decoration: none;
 
 }
+
 Header nav a.aktiv {
     background-color: #33333342;
 }
+
 Header nav a:hover {
-    font-family: "Ms Madi", cursive;
+    background-color: #7e7e7e;
 }
 
 /* main */
@@ -94,26 +100,14 @@ main {
     background-color: #ffffff;
     padding: 1em;
     border-radius: 0.5em;
-    display: flex;
-    position: relative;
-
-    /* grid-area: innehåll;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    gap: 5px; */
 }
+
 main .innehall {
-    width: 50%;
     padding: 2px;
 }
+
 main .innehall .bild {
- position: relative;
-}
-main .innehall .bild img {
-    background-color: #fff;
-    margin-top: 2px;
-    border-radius: 10px;
+    position: relative;
 }
 
 /* bilder js regler */
@@ -126,20 +120,22 @@ main .innehall .bild img {
     margin: 0.5em;
     position: absolute;
     width: 95%;
-    right: -28.5em;
+    right: 0.5em;
     top: 0px;
 }
+
 .undertext3 {
-   display: none;
+    display: none;
     background-color: #ffffffcb;
     border-radius: 0.5em;
     padding: 0.5em;
     margin: 0.5em;
     position: absolute;
     width: 95%;
-    right: -28.5em;
+    right: 0.5em;
     top: 0px;
 }
+
 .undertext5 {
     display: none;
     background-color: #ffffffcb;
@@ -148,9 +144,10 @@ main .innehall .bild img {
     margin: 0.5em;
     position: absolute;
     width: 95%;
-    right: -28.5em;
+    right: 0.5em;
     top: 0px;
 }
+
 .undertext2 {
     display: none;
     background-color: #ffffffcb;
@@ -162,6 +159,7 @@ main .innehall .bild img {
     left: -28.5em;
     top: 0px;
 }
+
 .undertext4 {
     display: none;
     background-color: #ffffffcb;
@@ -173,6 +171,7 @@ main .innehall .bild img {
     left: -28.5em;
     top: 0px;
 }
+
 .undertext6 {
     display: none;
     background-color: #ffffffcb;
@@ -193,10 +192,12 @@ aside {
     border-radius: 0.5em;
     grid-area: sida;
 }
+
 aside h2 {
     font-size: 2em;
-    
+
 }
+
 aside p {
     font-size: 1em;
 }
@@ -209,10 +210,13 @@ footer {
     border-radius: 0.5em;
     grid-area: fot;
     display: flex;
+    margin-bottom: 1em;
 }
+
 footer p {
     font-size: 1em;
 }
+
 footer p a {
     color: #000000;
 }
@@ -229,16 +233,22 @@ footer p a {
             "sida"
             "fot";
     }
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
+
     header nav {
         width: 100%;
     }
+
     Header nav a {
         font-size: 1.5em;
         width: 4.5em;
-        
+    }
+
+    main {
+        display: flex;
+    }
+
+    main .innehall {
+        width: 50%;
     }
 }
 
@@ -247,20 +257,26 @@ footer p a {
     .kontainer {
         width: 1300px;
         grid-template-columns: 3fr 1fr;
-        grid-template-areas: 
-        "huvud huvud"
-        "innehåll sida"
-        "fot fot";
+        grid-template-areas:
+            "huvud huvud"
+            "innehåll sida"
+            "fot fot";
     }
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
+
     header nav {
         width: 73%;
     }
+
     Header nav a {
         font-size: 2em;
         width: 5.5em;
     }
-     
+
+    main {
+        display: flex;
+    }
+
+    main .innehall {
+        width: 50%;
+    }
 }
